@@ -1,0 +1,36 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap \"test/**/*.test.js\"",
+    "dev": "fastify start -w -l info -P app.js",
+    "build": "tsc -p tsconfig.json",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^5.0.0",
+    "@fastify/postgres": "^5.2.0",
+    "@fastify/sensible": "^4.1.0",
+    "@okta/jwt-verifier": "^3.0.1",
+    "@okta/okta-auth-js": "^7.2.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.0.0",
+    "fastify-cli": "^4.4.0",
+    "fastify-plugin": "^3.0.0",
+    "pg": "^8.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.10",
+    "@types/pg": "^8.6.6",
+    "tap": "^16.1.0",
+    "typescript": "^5.0.2"
+  }
+}
